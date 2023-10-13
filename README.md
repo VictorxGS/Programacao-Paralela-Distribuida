@@ -1,18 +1,21 @@
 # Programacao-Paralela-Distribuida
 
-Rascunho:
-OPenMP
+**OPenMP**
+
+Frequentemente ao programar não exploramos totalmente o potencial computacional de nossas máquinas. Isso acontece porque muitas vezes executamos 
+nossos códigos de maneira sequencial, sob uma única thread. O que resulta em subutilização de recursos e consequentemente obtendo um desempenho 
+inferior devido a recursos unitilizados.
 
 O OpenMP é uma API de programação MultiThread de memória compartilhada utilizada para paralelização de códigos nas linguagens C, C++ e Fortran.
-Nos cenários desse repostiório estarei aplicando alguns principais recursos da API do OpenMP para demonstrar a paralelização e consequentemente 
-otimização o desempenho do mesmo.
+A mesma nos possibilita manter a estrutura sequencial do código, minimizando a necessidade de grandes modificações para introduzir paralelismo 
+em áreas com maior demanda de processamento. Nos cenários desse repostiório estarei aplicando alguns principais recursos da API do OpenMP na 
+linguagem C para demonstrar a paralelização e o potencial de otimização no desempenho do código. 
 
-Motivação:
-Rotineiramente quando programamos não utilizamos todo o poder computacional que temos em nossas máquinas. Isso geralmente ocorre por executamos 
-nossos códigos de forma sequencial e sob uma única thread, deixado de ter uma permformance melhor.
+***GetStart***
 
-Estaremos paralelizando código "serializados".
-O mesmo código que é utilizado na versão serial é também utilizado na versão paralela.
+``-gcc -o file_name file_name.c -fopenmp``
+
+``./file_name (input)``
 
 ```
 #include <omp.h>
@@ -23,6 +26,4 @@ O mesmo código que é utilizado na versão serial é também utilizado na vers�
 #pragma omp private
 #pragma omp master
 ```
-CLI commmand compile:
-``-gcc -o file_name file_name.c -fopenmp``
-``./file_name``
+
