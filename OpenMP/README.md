@@ -1,7 +1,4 @@
-# Programacao-Paralela-Distribuida
-
-**OPenMP**
-
+# OPenMP
 Frequentemente ao programar não exploramos totalmente o potencial computacional de nossas máquinas. Isso acontece porque muitas vezes executamos 
 nossos códigos de maneira sequencial, sob uma única thread. O que resulta em subutilização de recursos e consequentemente obtendo um desempenho 
 inferior devido a recursos unitilizados.
